@@ -1,0 +1,28 @@
+/*!
+ * gkaptcha.js v0.0.1
+ * http://gesturekit.com/
+ *
+ * Copyright (c) 2014, RoamTouch
+ * Released under the Apache v2 License.
+ * http://gesturekit.com/
+ */
+.gkaptcha-container {
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 1px solid #CCC;
+    border-radius: 4px;
+    height: 180px;
+    overflow: auto;
+    color: #FFF;
+    text-shadow: 0 -1px #666;
+    margin: 10px auto;
+}
+
+.gkaptcha-input {
+    height: 0px;
+    width: 0px;
+    line-height: 0;
+    font-size: 0;
+    border: none;
+    background: transparent;
+    pointer-events: none;
+}

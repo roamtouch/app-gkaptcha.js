@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>gkaptcha.js</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimal-ui">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <link href="../gkaptcha.css" rel="stylesheet">
+        <style>
+            body {
+                margin: 0;
+                font-family: "Helvetica Neue", Helvetica, Arial, serif;
+                background-color: #FFF;
+            }
+
+            h1 {
+                font-size: 2em;
+                text-align: center;
+                color: #000;
+            }
+
+            h2 {
+                font-size: 1em;
+                text-align: center;
+            }
+
+            form {
+                margin: 0 auto;
+                padding: 20px;
+            }
+
+            .form-group {
+                margin-bottom: 15px;
+            }
+
+            label {
+                display: inline-block;
+                margin-bottom: 5px;
+                font-weight: bold;
+                font-size: 14px;
+            }
+
+            .form-control {
+                display: block;
+                width: 100%;
+                height: 34px;
+                padding: 6px 12px;
+                font-size: 14px;
+                line-height: 1.428571429;
+                margin: 0;
+                -moz-box-sizing: border-box;
+                -ms-box-sizing: border-box;
+                -o-box-sizing: border-box;
+                box-sizing: border-box;
+                color: #555;
+                vertical-align: middle;
+                background-color: #FFF;
+                border: 1px solid #CCC;
+                border-radius: 4px;
+                -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+                box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+                -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+                transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+            }
+
+            .btn {
+                display: inline-block;
+                padding: 10px 16px;
+                background-color: #2980b9;
+                line-height: 200px;
+                text-align: center;
+                font-size: 2em;
+                line-height: 1em;
+                cursor: pointer;
+                border: none;
+                color: #FFF;
+                border-radius: 5px;
+                font-size: 18px;
+                margin: 0 auto;
+            }
+
+            .btn[disabled] {
+                background-color: #CCC;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>gkaptcha.js</h1>
+        <h2>A simple and funny gesture-based captcha.</h2>
+        <form action="http://gesturekit.com">
+            <div class="form-group">
+                <label for="email">E-mail address</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter email" required>
+            </div>
+            <div class="form-group">
+                <label for="pass">Password</label>
+                <input type="password" class="form-control" id="pass" placeholder="Password" required>
+            </div>
+            <div class="form-group">
+                <label>Please draw the shape in the box to submit the form:</label>
+                <div class="gkaptcha-container" id="sensor">
+                    <input id="gkaptcha-input" class="gkaptcha-input" type="text" required>
+                </div>
+            </div>
+            <button id="send-form" type="submit" class="btn">Send</button>
+        </form>
+
+        <script src="../../gesturekit.js/dist/gesturekit.js"></script>
+        <script src="../gkaptcha.js"></script>
+        <script>
+            var g = new gkaptcha({'gid': '3aa45793-3cbd-45d0-8e82-1ec7bcc71cfb', 'sensor': document.getElementById('sensor')});
+        </script>
+    </body>
+</html>
