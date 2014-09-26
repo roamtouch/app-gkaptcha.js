@@ -1,3 +1,5 @@
+<img src="http://www.gesturekit.com/wp-content/uploads/2014/05/colash_largo.png" alt="GestureKit Technology">
+
 # gkaptcha.js
 
 > A simple and funny gesture-based captcha.
@@ -16,11 +18,17 @@
 - Twitter: [@pazguille](http://twitter.com/pazguille)
 - Web: [http://pazguille.me](http://pazguille.me)
 
-## Credits
+## Credits
 
-<img src="http://www.gesturekit.com/assets/img/roamtouch.png" width="200" alt="RoamTouch logo">
+<img src="http://www.roamtouch.com/wp-content/uploads/2014/06/logo.png" width="200" alt="RoamTouch logo">
 
-## License
+[RoamTouch](http://roamtouch.com)
+
+<img src="http://www.gesturekit.com/wp-content/uploads/2014/05/logogkblue.png" width="200" alt="RoamTouch logo">
+
+[GestureKit](http://www.gesturekit.com)
+
+## License
 Licensed under Apache v2 License.
 
-Copyright (c) 2014 [RoamTouch](http://github.com/RoamTouch).
+Copyright (c) 2014 [RoamTouch](http://github.com/RoamTouch). 
